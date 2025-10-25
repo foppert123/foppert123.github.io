@@ -12,7 +12,7 @@
     padding: 0;
 }
 body {
-    font-family: 'Montserrat', Arial, sans-serif; /* Замінено Poppins на Montserrat */
+    font-family: 'Montserrat', Arial, sans-serif; 
     background: var(--secondary);
     color: var(--text);
     line-height: 1.6;
@@ -91,25 +91,6 @@ nav {
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover {
     display: flex;
-}
-/* Responsive Nav */
-@media (max-width: 800px) {
-    nav {
-        justify-content: space-between;
-    }
-    .nav-list {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .nav-list > li {
-        width: 100%;
-    }
-    .dropdown-content {
-        position: static;
-        min-width: unset;
-        box-shadow: none;
-        border-radius: 0;
-    }
 }
 main {
     margin: 2rem 0;
@@ -263,10 +244,10 @@ footer {
     margin-bottom: 1rem;
     transition: all 0.3s ease;
     display: flex;
-    flex-direction: row;           /* ← row замість column */
-    align-items: center;           /* ← по середині по вертикалі */
-    gap: 1.5rem;                   /* ← рівна відстань між текстом і кнопкою */
-    min-height: 80px;              /* ← мінімальна висота */
+    flex-direction: row;        
+    align-items: center;          
+    gap: 1.5rem;                 
+    min-height: 80px;             
 }
 
 .resource-item:hover {
@@ -279,7 +260,7 @@ footer {
     color: var(--primary);
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 0.2rem;         /* ← мінімальний відступ */
+    margin-bottom: 0.2rem;      
     display: block;
 }
 
@@ -287,7 +268,7 @@ footer {
     color: #555;
     font-size: 0.95rem;
     line-height: 1.4;
-    margin-bottom: 0;              /* ← без відступів */
+    margin-bottom: 0;            
 }
 
 .resource-item a {
@@ -317,30 +298,6 @@ footer {
     justify-content: center;       
 }
 
-
-@media (max-width: 900px) {
-    main {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    .teacher-photo {
-        justify-content: flex-start;
-    }
-}
-@media (max-width: 600px) {
-    .container {
-        width: 98%;
-    }
-    .greeting, .announcements {
-        padding: 1rem;
-    }
-    .teacher-photo img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-/* Styles for books */
 .books-container {
     width: 90%;
     max-width: 1200px;
@@ -369,11 +326,11 @@ footer {
 
 .book-content {
     padding: 1rem;
-    display: flex; /* Додано flexbox */
-    flex-direction: column; /* Вирівнювання елементів по вертикалі */
-    align-items: center; /* Центрування по горизонталі */
-    justify-content: center; /* Центрування по вертикалі */
-    text-align: center; /* Центрування тексту в h3 і a */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
 }
 
 .book-content h3 {
@@ -408,10 +365,10 @@ footer {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* відступ між картинкою і текстом */
+  gap: 10px; 
 }
 
 .logo img {
-  height: 40px; /* змінюй як хочеш */
+  height: 40px; 
   width: auto;
 }
