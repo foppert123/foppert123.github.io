@@ -31,7 +31,7 @@ header {
 nav {
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .nav-list {
     list-style: none;
@@ -426,9 +426,50 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px; 
+  margin-left: 0;
 }
 
 .logo img {
   height: 40px; 
   width: auto;
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* текст */
+.links-wrapper p {
+  text-align: justify;
+  text-indent: 30px;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* перший абзац без відступу */
+.links-wrapper p:first-of-type {
+  text-indent: 0;
+}
+
+/* заголовок */
+.links-wrapper h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.photo-left {
+    float: left;
+    width: 200px;
+    height: auto;
+    
+    margin: 0 20px 10px 0; /* відступи від тексту */
+    
+    border: 3px solid #333; /* рамка */
+    border-radius: 10px; /* закруглення */
+    padding: 10px; /* внутрішній відступ */
+    
+    background: #fff; /* щоб виглядало як рамка */
 }
